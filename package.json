@@ -1,0 +1,13 @@
+{
+  "name": "template-name",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-stylus": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-requirejs": "latest",
+    "grunt-textfile":"latest"
+  }
+}
