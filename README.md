@@ -1,6 +1,8 @@
 ---
 Static Canvas Generator
 
+<i>Depends on jQuery, Underscore & Require js</i>
+
 <i>Template engine for mini canvas experiments - to be deployed on jekyll site</i>
 
 #1 - copy project to new directory
