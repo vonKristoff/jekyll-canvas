@@ -49,7 +49,10 @@ module.exports = function(grunt) {
 			  	options: {
 			  		dest: 'distribution/',
 			    	template: 'template.tpl',
-			    	urlFormat: 'DATE-SLUG<%= pkg.name %>.md'
+			    	urlFormat: 'DATE-SLUG<%= pkg.name %>.md',
+			    	customVars: {
+          				foo: 'bar'
+        			}
 			  	}
 			},
 			main: {
