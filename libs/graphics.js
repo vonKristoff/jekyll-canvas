@@ -4,17 +4,20 @@ define(function(){
 
 	Graphics.circle = function(x, y, radius) { 
 		this.beginPath(); 
-		this.arc(x, y, radius, 0, Math.PI*2, true); 
+		this.arc(x, y, radius, 0, Math.PI*2, true);
+		this.closePath();  
 	};
 	Graphics.fillCircle = function(x, y, radius) { 
-		this.circle(x, y, radius); 
-		this.fill(); 
 		this.beginPath();
+		this.circle(x, y, radius); 
+		this.fill();
+		this.closePath(); 
 	};
 	Graphics.strokeCircle = function(x, y, radius) { 
+		this.beginPath(); 
 		this.circle(x, y, radius); 
 		this.stroke(); 
-		this.beginPath();
+		this.closePath(); 
 	};
 	Graphics.ellipse = function(x, y, width, height) { 
 		this.beginPath(); 
@@ -25,13 +28,14 @@ define(function(){
 	};
 	Graphics.fillEllipse = function(x, y, width, height) { 
 		this.ellipse(x,y,width, height); 
-		this.fill(); 
-		this.beginPath();
+		this.fill(); 	
+		this.closePath(); 
 	};
 	Graphics.strokeEllipse = function(x, y, width, height) { 
+		this.beginPath(); 
 		this.ellipse(x,y,width, height); 
 		this.stroke(); 
-		this.beginPath();
+		this.closePath(); 
 	};
 
 	Graphics.line = function(x1, y1, x2, y2){
@@ -39,7 +43,7 @@ define(function(){
 		this.moveTo(x1,y1); 
 		this.lineTo(x2,y2); 
 		this.stroke(); 
-		this.beginPath();
+		this.closePath(); 
 	};
 
 	return Graphics;
