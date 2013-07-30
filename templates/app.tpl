@@ -1,4 +1,4 @@
-define(['graphics','<%= grunt.file.readJSON('package.json').name + '-code' %>'], function (Graphics,Pattern) {
+define(['graphics','<%= grunt.file.readJSON('package.json').name + '_code' %>'], function (Graphics,Pattern) {
 
 	var App = {}; 
 

@@ -6,7 +6,7 @@ require.config({
         creativejs: '../libs/creativejs',
         graphics:   '../libs/graphics',
         <%= grunt.file.readJSON('package.json').name %>:     'app',
-        <%= grunt.file.readJSON('package.json').name + '-code' %>:       'pattern'
+        <%= grunt.file.readJSON('package.json').name + '_code' %>:       'pattern'
     },
     shim: {
         underscore: {

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-		<div class=""></div>
+		<div class="<%= grunt.file.readJSON('package.json').name %>"></div>
         <script data-main="js/main" src="components/requirejs/require.js"></script>
 
     </body>

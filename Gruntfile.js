@@ -55,6 +55,13 @@ module.exports = function(grunt) {
         			}
 			  	}
 			},
+			index:{
+				options: {
+					dest: '.',
+					template: 'index.tpl',
+					urlFormat: 'index.html'
+				}
+			},
 			main: {
 				options: {
 					dest: 'js',
