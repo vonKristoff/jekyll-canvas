@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 		uglify: {
      		files: {
         		src: 'distribution/<%= pkg.name %>.js',
-        		dest: '../../Blog/dev/src/resources/js/static/<%= pkg.name %>.min.js'
+        		dest: '../../PI/dev/src/resources/js/static/<%= pkg.name %>.min.js'
       		}
     	},
 		watch: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: 'distribution/',
 		    		src: '*.md',
-		    		dest: '../../Blog/dev/src/_posts/static/',
+		    		dest: '../../PI/dev/src/_posts/static/',
 		    		filter: 'isFile'
 		    	}]	
 			}
