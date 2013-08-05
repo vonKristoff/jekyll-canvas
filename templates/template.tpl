@@ -6,3 +6,6 @@ category: static
 excerpt: <%= grunt.option('excerpt') %>
 js: resources/js/static/<%= grunt.file.readJSON('package.json').name %>.min.js
 ---
+{% prism javascript linenos %}
+{% endprism %}
+---
